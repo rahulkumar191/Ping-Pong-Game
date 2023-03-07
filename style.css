@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+/* board style  */
+.board{
+    background-color: #3E54AC;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* rod style */
+.rod1, .rod2 {
+    background-color: #FDD36A;
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 21px;
+}
+.rod1{
+    position: absolute;
+    top: 0; 
+}
+.rod2{
+    position: absolute;
+    bottom: 0;
+}
+
+/* ball style */
+.ball{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;  
+}
+
+.scale-width{
+    animation:  scaleWidth .2s 2 alternate ease-in-out;
+}
+.scale-height{
+    animation:  scaleHeight .2s 2 alternate ease-in-out;
+}
+
+
+@keyframes scaleWidth{
+    100%{
+        width: 25px;
+    }
+}
+
+@keyframes scaleHeight{
+    100%{
+        height: 25px;
+    }
+}
